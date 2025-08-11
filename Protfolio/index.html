@@ -66,8 +66,12 @@
   a:hover, a:focus { color: var(--secondary); outline: none; }
   img, iframe { display: block; max-width: 100%; }
 
-  /* Container */
-  .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+  /* Container - UPDATED for wider showcase */
+  .container { 
+    max-width: 1400px; 
+    margin: 0 auto; 
+    padding: 0 2rem; 
+  }
 
   /* Navigation */
   nav {
@@ -81,6 +85,7 @@
   nav .container {
     display: flex; justify-content: space-between; align-items: center;
     height: 70px;
+    max-width: 1200px;
   }
   nav .logo {
     font-weight: 700; font-size: 1.8rem;
@@ -214,22 +219,23 @@
   }
   
   p.section-desc {
-    max-width: 700px; 
+    max-width: 800px; 
     margin: 0 auto 3rem; 
     text-align: center;
     color: var(--text-secondary); 
-    font-size: 1.1rem; 
-    line-height: 1.6;
+    font-size: 1.15rem; 
+    line-height: 1.7;
+    padding: 0 1rem;
   }
 
   /* About Section */
   section#about {
     background: linear-gradient(135deg, var(--bg-card) 0%, rgba(26, 26, 46, 0.8) 100%);
-    padding: 4rem 2rem 5rem; 
+    padding: 4rem 3rem 5rem; 
     border-radius: 24px; 
     color: var(--text-primary);
     box-shadow: var(--shadow);
-    max-width: 1000px; 
+    max-width: 1100px; 
     margin: 0 auto 5rem;
     position: relative;
     border: 1px solid rgba(51, 65, 85, 0.3);
@@ -246,18 +252,18 @@
 
   .about-content {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
   }
 
   .about-text {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
   }
 
   .about-text p {
     margin-bottom: 1.5rem;
     color: var(--text-secondary);
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.8;
     transition: all 0.3s ease;
@@ -272,25 +278,27 @@
     transform: translateY(-2px);
   }
 
-  /* Showcase Section */
+  /* Showcase Section - UPDATED */
   section#showcase { 
     margin-top: 5rem; 
     margin-bottom: 7rem; 
-    max-width: 1200px; 
+    max-width: 1400px;
+    padding: 0 2rem;
   }
   
   .showcase-section { 
-    margin-bottom: 4rem; 
+    margin-bottom: 5rem; 
   }
   
   .showcase-section h3 {
-    font-size: 1.75rem; 
-    font-weight: 600; 
-    margin-bottom: 1.5rem;
+    font-size: 2rem; 
+    font-weight: 700; 
+    margin-bottom: 2rem;
     color: var(--primary-light); 
     font-family: 'Space Grotesk', sans-serif;
     position: relative;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
+    text-align: left;
   }
   
   .showcase-section h3::before {
@@ -298,17 +306,19 @@
     position: absolute;
     left: 0;
     top: 50%;
-    width: 4px;
+    width: 5px;
     height: 100%;
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-    border-radius: 2px;
+    border-radius: 3px;
     transform: translateY(-50%);
   }
   
+  /* UPDATED Showcase Grid - Better spacing and sizing */
   .showcase-grid { 
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-    gap: 2rem; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2.5rem; 
+    width: 100%;
   }
   
   .video-card {
@@ -322,6 +332,7 @@
     flex-direction: column;
     border: 1px solid rgba(51, 65, 85, 0.2);
     position: relative;
+    width: 100%;
   }
   
   .video-card::before {
@@ -358,15 +369,15 @@
     transform: scale(1.05);
   }
 
-  /* Contact Section */
+  /* Contact Section - UPDATED */
   section#contact {
     background: linear-gradient(135deg, var(--bg-card) 0%, rgba(26, 26, 46, 0.9) 100%);
-    padding: 4rem 2rem 5rem;
+    padding: 4rem 3rem 5rem;
     border-radius: 24px; 
     box-shadow: var(--shadow-lg);
     color: var(--text-primary); 
     text-align: center; 
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto 4rem;
     border: 1px solid rgba(51, 65, 85, 0.3);
     backdrop-filter: blur(20px);
@@ -381,36 +392,38 @@
   #contact p { 
     color: var(--text-secondary); 
     margin-bottom: 3rem; 
-    font-size: 1.1rem; 
-    max-width: 700px; 
+    font-size: 1.15rem; 
+    max-width: 800px; 
     margin-left: auto; 
     margin-right: auto; 
+    line-height: 1.7;
   }
   
   .contact-info { 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; 
     font-size: 1rem;
   }
   
   .contact-item {
     background: rgba(51, 65, 85, 0.1);
     backdrop-filter: blur(10px);
-    padding: 1.5rem 2rem;
+    padding: 2rem 2.5rem;
     border-radius: 16px; 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease; 
     display: flex; 
     align-items: center;
     justify-content: flex-start;
-    gap: 1rem; 
+    gap: 1.5rem; 
     cursor: pointer;
     border: 1px solid rgba(51, 65, 85, 0.2);
     text-decoration: none;
     color: var(--text-secondary);
     text-align: left;
-    word-break: break-all;
+    word-break: break-word;
+    font-size: 1.05rem;
   }
   
   .contact-item:hover, .contact-item:focus { 
@@ -422,8 +435,8 @@
   }
   
   .contact-icon { 
-    width: 24px; 
-    height: 24px; 
+    width: 28px; 
+    height: 28px; 
     flex-shrink: 0; 
     transition: transform 0.3s ease;
   }
@@ -510,7 +523,22 @@
     100% { transform: rotate(360deg); }
   }
 
-  /* Responsive Design */
+  /* Responsive Design - UPDATED */
+  @media (max-width: 1200px) {
+    .showcase-grid { 
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 2rem;
+    }
+    
+    .container {
+      max-width: 1000px;
+    }
+    
+    section#showcase {
+      max-width: 1000px;
+    }
+  }
+
   @media (max-width: 768px) {
     nav .container { 
       flex-direction: column; 
@@ -540,6 +568,17 @@
     
     .showcase-grid { 
       grid-template-columns: 1fr; 
+      gap: 2rem;
+    }
+    
+    .showcase-section h3 {
+      font-size: 1.75rem;
+      text-align: center;
+      padding-left: 0;
+    }
+    
+    .showcase-section h3::before {
+      display: none;
     }
     
     .contact-info { 
@@ -549,7 +588,7 @@
     .contact-item {
       justify-content: center;
       text-align: center;
-      word-break: break-word;
+      padding: 1.5rem 2rem;
     }
     
     .about-wrapper {
@@ -559,15 +598,19 @@
     }
     
     section#about {
-      padding: 3rem 1.5rem;
+      padding: 3rem 2rem;
       margin-bottom: 3rem;
     }
     
     section#contact {
-      padding: 3rem 1.5rem;
+      padding: 3rem 2rem;
     }
     
     .container {
+      padding: 0 1rem;
+    }
+    
+    section#showcase {
       padding: 0 1rem;
     }
   }
@@ -588,6 +631,18 @@
       right: 20px;
       width: 50px;
       height: 50px;
+    }
+    
+    .container {
+      padding: 0 1rem;
+    }
+    
+    section#about {
+      padding: 2.5rem 1.5rem;
+    }
+    
+    section#contact {
+      padding: 2.5rem 1.5rem;
     }
   }
 
