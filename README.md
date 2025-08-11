@@ -15,9 +15,11 @@ Here you’ll find a range of video projects including **cinematic edits, promot
 ## 🖼 Preview
 
 <p align="center">
-  <img src="<img width="1920" height="1080" alt="Screenshot (2)" src="https://github.com/user-attachments/assets/6581bd72-b67f-4027-a657-9d26c20c691f" />
-" alt="Portfolio Preview" width="80%">
+  <a href="https://content-portfolio-wjjm.vercel.app/" target="_blank">
+    <img src="assets/portfolio-screenshot.png" alt="Live portfolio preview" width="80%">
+  </a>
 </p>
+
 
 
 ---
