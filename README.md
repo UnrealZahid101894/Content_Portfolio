@@ -16,7 +16,7 @@ Here you’ll find a range of video projects including **cinematic edits, promot
 
 <p align="center">
   <a href="https://content-portfolio-wjjm.vercel.app/" target="_blank">
-    <img src="assets/portfolio-screenshot.png" alt="Live portfolio preview" width="80%">
+    <img src="https://github.com/UnrealZahid101894/Content_Portfolio/blob/c1a9765bc7b1d74002dbcd74febc25da4b76c5a8/Portfolio.png" alt="Live portfolio preview" width="80%">
   </a>
 </p>
 
